@@ -4,7 +4,7 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var str2pass = fs.readFile(index.html);
+var str2pass = fs.readFile('index.html');
 
 app.get('/', function(request, response) {
   response.send(str2pass)
