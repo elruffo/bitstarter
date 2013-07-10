@@ -1,10 +1,10 @@
+var fs = require('fs');
+
 var express = require('express');
 
 var app = express.createServer(express.logger());
 
 var str2pass = fs.readFile(index.html);
-
-// anewcommentline
 
 app.get('/', function(request, response) {
   response.send(str2pass)
