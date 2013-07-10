@@ -1,10 +1,10 @@
-var fs = require('fs');
+Avar fs = require('fs');
 
 var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var str2pass = fs.readFileSync('index.html').toString();;
+var str2pass = fs.readFileSync('myindex.html').toString();;
 
 app.get('/', function(request, response) {
   response.send(str2pass)
