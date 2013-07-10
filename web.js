@@ -4,7 +4,7 @@ var express = require('express');
 
 var app = express.createServer(express.logger());
 
-var str2pass = fs.readFileSync('myindex.html').toString();;
+var str2pass = fs.readFileSync('index.html').toString();;
 
 app.get('/', function(request, response) {
   response.send(str2pass)
