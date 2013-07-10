@@ -7,7 +7,7 @@ var str2pass = fs.readFile(index.html);
 // anewcommentline
 
 app.get('/', function(request, response) {
-  response.send(buf.toString())
+  response.send(str2pass)
 });
 
 var port = process.env.PORT || 5000;
